@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#121316">
+    <title>Форма заявки | РАСХОД</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Unbounded:wght@500;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/icon.ico">
+    <link rel="stylesheet" href="css/style.css?v1">
+</head>
+<body>
+    <header class="bar">
+        <a class="logo" href="https://команда-расход.рф" target="_blank" rel="noopener" aria-label="РАСХОД"><img src="img/logo.png" alt="РАСХОД" onerror="this.replaceWith(document.createTextNode('РАСХОД'))"></a>
+        <a class="btn" href="https://команда-расход.рф" target="_blank" rel="noopener">На главную</a>
+    </header>
+
+    <main class="wrap">
+        <section>
+            <h1>Вступай в команду</h1>
+        </section>
+
+        <section class="card info">
+            <h2>Набор в тиму, г. Казань</h2>
+            <p>Обязательно иметь водительское удостоверение, личное авто и желательно стаж вождения от 1 года.</p>
+            <p class="muted">Сборы только в Казани и близлежащих окрестностях.</p>
+        </section>
+
+        <section>
+            <h2>Заполни анкету</h2>
+            <p class="note">Все поля обязательны, бро!</p>
+
+            <form action="https://formspree.io/f/maqpyabe" method="POST" enctype="multipart/form-data">
+                <div class="field">
+                    <label for="experience">Стаж вождения (лет)</label>
+                    <input type="number" id="experience" name="Стаж вождения (В годах):" required min="0" max="60" placeholder="Сколько лет за рулём?" aria-describedby="experience-hint">
+                    <span class="hint" id="experience-hint">Укажи полных лет стажа</span>
+                </div>
+
+                <div class="field">
+                    <label for="age">Возраст</label>
+                    <input type="number" id="age" name="Полных лет (В годах):" required min="16" max="99" placeholder="18">
+                </div>
+
+                <div class="field">
+                    <label for="city">Район Казани</label>
+                    <input type="text" id="city" name="Район города:" required placeholder="Например: Авиастроительный, Зеленодольск, Дербышки..." aria-describedby="city-hint">
+                    <span class="hint" id="city-hint">Важно: набор только по Казани и близлежащим районам</span>
+                </div>
+
+                <div class="field">
+                    <label for="telegram">Telegram (юзернейм)</label>
+                    <input type="text" id="telegram" name="Тег Telegram:" required placeholder="@tvoy_username" autocapitalize="none" autocomplete="off">
+                </div>
+
+                <div class="field">
+                    <label for="car">Твой болид</label>
+                    <input type="text" id="car" name="Марка/Модель машины" required placeholder="Марка, модель...">
+                </div>
+
+                <div class="field">
+                    <label for="why">Почему хочешь к нам?</label>
+                    <textarea id="why" name="Пару слов о себе и машине:" required placeholder="Напиши пару строк о себе и о своей машине..."></textarea>
+                </div>
+
+                <!-- Антиспам Formspree -->
+                <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                <button class="submit" type="submit">Отправить заявку</button>
+            </form>
+        </section>
+
+        <section class="card warn">
+            <h2>Внимание</h2>
+            <p>Повторюсь, набор открыт только для пацанов из Казани и близлежащих районов.</p>
+            <p class="muted">После заполнения формы ожидайте обратную связь в Telegram.</p>
+        </section>
+    </main>
+
+    <footer class="foot"><p>AvorerInc | <a href="https://xn----7sbabrd0bqkhhwo0d.xn--p1ai/" target="_blank" rel="noopener">Основной сайт</a></p></footer>
+</body>
+</html>
