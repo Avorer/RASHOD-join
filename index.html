@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#121316">
+    <title>Набор закрыт | РАСХОД</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Unbounded:wght@500;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/icon.ico">
+    <link rel="stylesheet" href="css/style.css?v2">
+</head>
+<body>
+    <header class="bar">
+        <a class="logo" href="https://команда-расход.рф" target="_blank" rel="noopener" aria-label="РАСХОД"><img src="img/logo.png" alt="РАСХОД" onerror="this.replaceWith(document.createTextNode('РАСХОД'))"></a>
+        <a class="btn" href="https://команда-расход.рф" target="_blank" rel="noopener">На главную</a>
+    </header>
+
+    <div class="closed-banner" role="status">Набор закрыт</div>
+
+    <main class="wrap">
+        <section>
+            <h1>Набор закрыт</h1>
+            <p class="lead">Заявки в тиму больше не принимаются. Спасибо всем, кто откликнулся.</p>
+        </section>
+
+        <section class="card warn">
+            <h2>Что дальше</h2>
+            <p>Набор в тиму, г. Казань, завершён. О новом наборе сообщим на основном сайте.</p>
+            <p class="muted">Если ты уже отправил анкету, ожидай обратную связь в Telegram.</p>
+        </section>
+
+        <section>
+            <h2>Анкета</h2>
+            <p class="note">Форма отключена и не отправляет данные.</p>
+
+            <div class="sealed">
+                <form onsubmit="return false" aria-disabled="true">
+                    <fieldset disabled>
+                        <div class="field">
+                            <label for="experience">Стаж вождения (лет)</label>
+                            <input type="number" id="experience" placeholder="Сколько лет за рулём?">
+                        </div>
+                        <div class="field">
+                            <label for="age">Возраст</label>
+                            <input type="number" id="age" placeholder="18">
+                        </div>
+                        <div class="field">
+                            <label for="city">Район Казани</label>
+                            <input type="text" id="city" placeholder="Например: Авиастроительный, Зеленодольск, Дербышки...">
+                        </div>
+                        <div class="field">
+                            <label for="telegram">Telegram (юзернейм)</label>
+                            <input type="text" id="telegram" placeholder="@tvoy_username">
+                        </div>
+                        <div class="field">
+                            <label for="car">Твой болид</label>
+                            <input type="text" id="car" placeholder="Марка, модель...">
+                        </div>
+                        <div class="field">
+                            <label for="why">Почему хочешь к нам?</label>
+                            <textarea id="why" placeholder="Напиши пару строк о себе и о своей машине..."></textarea>
+                        </div>
+                        <button class="submit" type="button">Набор закрыт</button>
+                    </fieldset>
+                </form>
+                <div class="seal-layer" aria-hidden="true">
+                    <div class="seal"><strong>Набор закрыт</strong><span>заявки не принимаются</span></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="foot"><p>AvorerInc | <a href="https://xn----7sbabrd0bqkhhwo0d.xn--p1ai/" target="_blank" rel="noopener">Основной сайт</a></p></footer>
+</body>
+</html>
